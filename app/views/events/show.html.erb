@@ -12,7 +12,7 @@
 	<tr>
 		<td><%= @event.location %></td>
 		<td><%= @event.event_date %></td>
-		<td><%= @user.email %></td>	
+		<td><%= @user.username%></td>	
 	</tr>
 </table>
 
@@ -25,7 +25,7 @@
 <% @event.attendees.each do |attendee| %>	
 		<tr>
 			
-			<td><%= attendee.email %></td>
+			<td><%= attendee.username %></td>
 		</tr>
 	<% end %>
 </table>
