@@ -13,19 +13,19 @@
 	<tr>
 		<td><%= @event.location %></td>
 		<td><%= @event.event_date %></td>
-		<td><%= @user.username %></td>	
+		<td><%= @user.email %></td>	
 	</tr>
 </table>
 
 <h4>Attendees: </h4>
 <table>
 	<tr>
-			<th>Username</th>
+			
 			<th>Email</th>
 	</tr>
 <% @event.attendees.each do |attendee| %>	
 		<tr>
-			<td><%= attendee.username %></td>
+			
 			<td><%= attendee.email %></td>
 		</tr>
 	<% end %>

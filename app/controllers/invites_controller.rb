@@ -1,5 +1,5 @@
 class InvitesController < ApplicationController
-    def new; end
+  def new; end
 
   def create
     @invite = Invite.new(params.permit(:user_id, :event_id))
