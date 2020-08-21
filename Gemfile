@@ -33,7 +33,11 @@ gem 'rails-controller-testing'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails', '~> 4.0.1'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
+  gem 'better_errors', '~> 2.7', '>= 2.7.1'
+
 end
 
 group :development do
@@ -50,6 +54,12 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
+  gem 'database_cleaner', '~> 1.8', '>= 1.8.5'
+  gem 'database_cleaner-active_record'
+  gem 'faker'
+  gem 'guard-rspec'
+  gem 'launchy'
+  gem 'shoulda-matchers', '~> 4.3'
   gem 'webdrivers'
 end
 
