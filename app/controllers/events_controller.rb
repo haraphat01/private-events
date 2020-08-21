@@ -14,11 +14,11 @@ class EventsController < ApplicationController
   end
 
   def past
-    Event.past
+    @event = Event.past
   end
 
   def upcoming
-    Event.upcoming
+    @event = Event.upcoming
   end
 
   def create
