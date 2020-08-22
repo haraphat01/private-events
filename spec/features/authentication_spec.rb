@@ -17,7 +17,7 @@ feature 'sign up process' do
     end
 
     scenario 'redirects to root path after signup' do
-      expect(page).to have_content 'Log out'
+      expect(page).to have_content 'Logout'
     end
   end
 end
